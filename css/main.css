@@ -72,6 +72,14 @@ body {
     font-size: 15px;
     padding-left: 40px;
 }
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
 
 .col-3 {
     padding-top: 20px;
@@ -79,6 +87,10 @@ body {
     display: inline-block;
     text-align: left;
 }
+.col-3 img {
+    border: 1px #cdd1d0 solid;
+}
+
 #skills {
     background-color: #e4efec;
     padding: 30px;
@@ -88,11 +100,11 @@ body {
     width: 50px;
 }
 
-footer {
+/* footer {
     background-color: #f2f2f2;
     padding-top: 20px;
     display: block;
-}
+} */
 
 ul {
     list-style: none;
