@@ -33,7 +33,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color:rgba(239, 239, 239, .8);
   }
 
 .logo {
@@ -41,7 +41,7 @@ body {
 }
 
 #background {
-    background-color: #f2f2f2;
+    background-color: #e4efec;
     height: 300px;
 }
 
@@ -51,10 +51,20 @@ body {
 
 .summary h1 {
     font-size: 80px;
+    color: #749990;
 }
 
 .summary img {
     box-shadow: 3px 3px 15px 0px rgba(199,199,199,1);
+    width: 70%;
+}
+
+.summary-img {
+    text-align: center;
+}
+
+#projects {
+    padding-top: 50px;
 }
 
 .flex-container {
@@ -70,7 +80,7 @@ body {
     text-align: left;
 }
 #skills {
-    background-color: #f2f2f2;
+    background-color: #e4efec;
     padding: 30px;
 }
 
@@ -93,7 +103,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #0067b8;
+    color: #749990;
 }
 
 ul a {
@@ -109,10 +119,20 @@ img {
     width: 90%;
 }
 
+.button {
+    padding-top:20px;
+}
+
+.button a:hover {
+    background-color: #f2f2f2;
+}
+
 .btn {
-    border: 1px gray solid;
+    border: 1px #cdd1d0 solid;
+    background-color: #e4efec;
     padding: 10px;
 }
+
 
 h4 {
     font-size: 14px;
@@ -132,13 +152,16 @@ p {
 }
 .experience h2, #projects h2, #skills h2  {
     text-align: center;
+    color: #749990;
 }
 
 .experience-right {
     text-align: right;
+    padding-right: 52%;
 }
 .experience-left {
     text-align: left;
+    padding-left: 52%;
 }
 
 .experience-dates {
@@ -150,13 +173,14 @@ p {
 }
 .experience-detail {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-align: center;
+    padding: 0 100px;
 }
 
 @media screen and (min-width: 540px) {
     .summary {
-        margin: -240px 0 0 40px;
+        margin: -190px 0 0 100px;
         display: flex;
     }
 
@@ -181,6 +205,9 @@ p {
 
     .about {
         display: flex;
+    }
+    .about-text {
+        padding-top: 7%;
     }
 
     .about-img {
