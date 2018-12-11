@@ -13,7 +13,6 @@ function stickNavBar() {
 }
 
 function openMenu() {
-  console.log('hello');
   if (navbar.className === "nav-bar" && mainnav.className === "main-nav") {
     navbar.className += " responsive";
     mainnav.className += " responsive";
@@ -44,12 +43,11 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-//PRINTS
+// Newsletters
 document.getElementById("prints").addEventListener("click", openNews);
 
 function openNews() {
   document.querySelector('.print').classList.toggle('hide');
-  // document.querySelector('.post').classList.toggle('hide');
 }
 
 // POST
@@ -57,5 +55,4 @@ document.getElementById("posts").addEventListener("click", openPosts);
 
 function openPosts() {
   document.querySelector('.post').classList.toggle('hide');
-//   document.querySelector('.print').classList.add('hide');
 }
