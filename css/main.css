@@ -18,7 +18,6 @@ body {
     justify-content: space-evenly;
 }
 
-
 .main-nav a {
     color: #000;
     display: block;
@@ -70,22 +69,44 @@ body {
     font-size: 15px;
     padding: 20px;
 }
+
 .contact {
     text-align: center;
     padding: 40px;
 }
+
 .contact-icons {
     display: flex;
     justify-content: center;
 }
 
-.col-3 {
+.project {
     padding-top: 20px;
     padding-bottom: 20px;
     display: inline-block;
     text-align: left;
 }
-.col-3 img {
+.print, .post {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: auto;
+}
+.project-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.project-menu div {
+    padding: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.project img, .print img, .post img {
     border: 1px #cdd1d0 solid;
     width: 100%;
 }
@@ -130,7 +151,7 @@ img {
     padding-top:20px;
 }
 
-.button a:hover {
+.button a:hover, .single-btn:hover  {
     background-color: #f2f2f2;
 }
 
@@ -140,6 +161,11 @@ img {
     padding: 10px;
 }
 
+.single-btn {
+    color:#749990;
+    width: 30%;
+    text-align: center;
+}
 
 h4 {
     font-size: 14px;
@@ -157,6 +183,7 @@ p {
     padding: 30px;
     background-color: #f2f2f2;
 }
+
 .experience h2, #projects h2, #skills h2  {
     text-align: center;
     color: #749990;
@@ -169,6 +196,7 @@ p {
 .experience-dates {
     color: #749990;
 }
+
 .experience img {
     box-shadow: 3px 3px 15px 0px rgba(199,199,199,1);
     width: 60%;
@@ -179,6 +207,7 @@ p {
     text-align: center;
     padding: 0;
 }
+
 .about {
     display: flex;
     padding: 30px;
@@ -186,6 +215,69 @@ p {
 
 .main-nav .icon {
     display: none;
+}
+
+.hide {
+    display: none;
+}
+
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#myImg:hover {
+    opacity: 0.7;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); 
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1080px;
+}
+  
+#caption {
+    margin: auto;
+    max-width: 700px;
+    color: #fff;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+.close {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+footer p {
+    font-size: 10px;
+    text-align: right;
+    padding-right: 10px;
 }
 
 @media screen and (min-width: 540px) {
@@ -205,7 +297,7 @@ p {
         padding: 20px;
     }
 
-    .col-3 {
+    .project {
         width: 45%;
         display: inline-block;
         text-align: left;
@@ -239,7 +331,7 @@ p {
 }
 
 @media screen and (min-width: 1080px) {
-    .col-3 {
+    .project {
         width: 22%;
     }
 }
@@ -283,5 +375,8 @@ p {
         /* float: none; */
         display: block;
     }
+    .modal-content {
+        width: 100%;
+      }
 
 }
