@@ -313,20 +313,17 @@ footer p {
     }
 
     .experience-detail {
-        padding: 0 100px;
+        padding: 0 200px;
     }
     
 
     .experience-right {
-        text-align: right;
         padding-right: 52%;
     }
 
     .experience-left {
-        text-align: left;
         padding-left: 52%;
     }
-
     
 }
 
@@ -378,5 +375,17 @@ footer p {
     .modal-content {
         width: 100%;
       }
+
+    .experience-right, .experience-left {
+        text-align: left;
+    }
+    
+    .experience-detail {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 0;
+    }
+    
 
 }
