@@ -13,14 +13,11 @@ body {
 .main-nav {
     font-size: 14px;
     display: flex;
-    list-style: none;
     margin: 0;
     line-height: 50px;
+    justify-content: space-evenly;
 }
 
-.main-nav li:first-child {
-    margin-right: auto;
-}
 
 .main-nav a {
     color: #000;
@@ -36,7 +33,7 @@ body {
     background-color:rgba(239, 239, 239, .8);
   }
 
-.logo {
+#logo {
     font-size: 25px;
 }
 
@@ -90,6 +87,7 @@ body {
 }
 .col-3 img {
     border: 1px #cdd1d0 solid;
+    width: 100%;
 }
 
 #skills {
@@ -186,6 +184,10 @@ p {
     padding: 30px;
 }
 
+.main-nav .icon {
+    display: none;
+}
+
 @media screen and (min-width: 540px) {
     .summary {
         margin: -190px 0 0 100px;
@@ -204,9 +206,7 @@ p {
     }
 
     .col-3 {
-        width: 50%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        width: 45%;
         display: inline-block;
         text-align: left;
     }
@@ -240,7 +240,7 @@ p {
 
 @media screen and (min-width: 1080px) {
     .col-3 {
-        width: 24%;
+        width: 22%;
     }
 }
 
@@ -248,4 +248,40 @@ p {
     .summary-img, .about-img {
         display: none;
     }
+    
+    .nav-bar a:not(:first-child) {
+        display: none;
+    }
+
+    .nav-bar a.icon {
+        display: block;
+        height: 48px;
+        width: 48px;
+    }
+    
+    .nav-bar.responsive {
+        background-color: rgba(239, 239, 239, .8); 
+        display: flex;
+    }
+    
+    .main-nav {
+        justify-content: space-between;
+
+    }
+    
+    .main-nav.responsive {
+        display: block;
+    }
+
+    .nav-bar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .nav-bar.responsive a {
+        /* float: none; */
+        display: block;
+    }
+
 }

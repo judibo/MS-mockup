@@ -12,18 +12,21 @@
 <body>
     <header>
         <nav class="nav-bar" id="navbar">
-            <ul class="main-nav">
-                <li><a href="https://judibo.github.io/projects/" class="logo">JD</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="main-nav" id="mainnav">
+                <a href="https://judibo.github.io/projects/" id="logo">JD</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" class="fa fa-bars" alt="menu">
+                </a>
+
             </ul>
         </nav>
     </header>
     <main>
-        <!-- <section class="col-12" id="slider"><img src="img/desktop.jpg"></section> -->
         <section id="background"></section>
         <section class="summary">
             <div class="summary-title">
@@ -39,32 +42,32 @@
             <h2>P R O J E C T S</h2>
             <div class="flex-container">
                 <div class="col-3">
-                    <img src="img/connectfour.png">
-                    <h3>Connect Four</h3>
-                    <p>Game created for the first unit of General Assembly - Web Development Immersive</p>
-                    <p><strong>Technologies used:</strong> Html, CSS and Javascript.</p>
-                    <div class="button"><a href="https://github.com/judibo/connect-four" target="_blank" class="btn">GitHub</a>  <a href="https://judibo.github.io/connect-four/" target="_blank" class="btn">Project</a></div>
-                </div>
-                <div class="col-3">
                     <img src="img/bucket.jpg">
                     <h3>Where Next?</h3>
-                    <p>Create bucketlists of spots to go in a specific city, where the user can create new spots/cities, check the spot completed and upload pictures of it.</p>
+                    <p>A web app developed in Python to create bucketlists of spots in a specific city. The user can create new spots/cities, check the spot completed and upload pictures of it.</p>
                     <p><strong>Technologies used:</strong> Python, Django, Html, CSS and AWS.</p>
                     <div class="button"><a href="https://github.com/judibo/travel-guide" target="_blank" class="btn">GitHub</a>  <a href="https://wherenextbucketlist.herokuapp.com/" target="_blank" class="btn">Project</a></div>
                 </div>
                 <div class="col-3">
+                    <img src="img/ludo.png">
+                    <h3>Ludo</h3>
+                    <p>A strategy board game for two to four players created using the MERN stack and web sockets, so it can be played online and more than one game at a time.</p>
+                    <p><strong>Technologies used:</strong> React, NodeJS, Socket.io, MongoDB, Javascript, HTML, CSS and JWT.</p>
+                    <div class="button"><a href="https://github.com/judibo/ludo-game" target="_blank" class="btn">GitHub</a>  <a href="https://ludogame.herokuapp.com" target="_blank" class="btn">Project</a></div>
+                </div>
+                <div class="col-3">
                     <img src="img/cosmic.jpg">
                     <h3>Cosmic</h3>
-                    <p>Check your horoscope and keep track of their accuracy.</p>
-                    <p><strong>Technologies used:</strong> NodeJS, Express, Html, CSS.</p>
+                    <p>A MEN stack CRUD app written to consume 3rd party API where the user can check the horoscope and keep track of its accuracy. Inside the team, I had the role of front-end developer, helping style and design the layout of this web app.</p>
+                    <p><strong>Technologies used:</strong> NodeJS, Express, API, Html, CSS.</p>
                     <div class="button"><a href="https://github.com/judibo/cosmic" target="_blank" class="btn">GitHub</a>  <a href="https://cosmic-zodiac.herokuapp.com" target="_blank" class="btn">Project</a></div>
                 </div>
                 <div class="col-3">
-                    <img src="img/ludo.png">
-                    <h3>Ludo</h3>
-                    <p>A strategy board game for two to four players, in which the players race their four tokens from start to finish according to the rolls of a single die</p>
-                    <p><strong>Technologies used:</strong> React, NodeJS, Socket.io, MongoDB, Javascript, HTML, CSS and JWT.</p>
-                    <div class="button"><a href="https://github.com/judibo/ludo-game" target="_blank" class="btn">GitHub</a>  <a href="https://ludogame.herokuapp.com" target="_blank" class="btn">Project</a></div>
+                    <img src="img/connectfour.png">
+                    <h3>Connect Four</h3>
+                    <p>Game created using front-end tools with concise code.</p>
+                    <p><strong>Technologies used:</strong> Html, CSS and Javascript.</p>
+                    <div class="button"><a href="https://github.com/judibo/connect-four" target="_blank" class="btn">GitHub</a>  <a href="https://judibo.github.io/connect-four/" target="_blank" class="btn">Project</a></div>
                 </div>
             </div>
         </section>
@@ -168,7 +171,7 @@
                     <h4 class="experience-dates">March 2011 - May 2013</h4>
                     <h3>Inbrands</h3>
                     <h4>Jr. Designer</h4>
-                    <p>Fashion company that holds the brands Richards, Salinas Ellus, VR, Mandi, Bobstore and Herchcovitch. Started as an intern and after my graduation I became a Jr Designer at the ecommerce.<br/>
+                    <p>InBrands engages in the retail of fashion and lifestyle clothing brands in Brazil. Started as an intern and after my graduation I became a Jr Designer at the ecommerce.<br/>
                         - Creating banners for websites of the brands on the group and social media channels, as Facebook.<br/>
                         - Concept of microsites for special events, such as Happy Hours and Valentine's Day.<br/>
                         - Creating newsletters and special sections to the webpage.<br/>
